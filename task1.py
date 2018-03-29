@@ -22,6 +22,11 @@
 
 def main():
     # Test your function here
-    pass
+    import math
+    r = int(input("Molimo vas da unesete poluprecnik kruga"))
+    p = r * r * math.pi
+    print("Povrsina kruga je", p)
+
+
 
 main()
