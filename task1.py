@@ -16,17 +16,26 @@
 ===================================================
 """
 
-# Write your function here
 
+import math
+
+def area_of_circle(r):
+
+    if not isinstance(r, float) and not isinstance(r, int): # unijeti broj mora biti cijeli ili decimalni, pa to ispitujemo,
+        return -1                                           # a ako nije vratice -1
+
+    return (abs(r)**2)*math.pi  #f-ja vraca povrsinu kruga datog poluprecnika
 
 
 def main():
-    # Test your function here
-    import math
-    r = int(input("Molimo vas da unesete poluprecnik kruga"))
-    p = r * r * math.pi
-    print("Povrsina kruga je", p)
 
+    povrsina = area_of_circle(-2.3)
+    print(povrsina)
 
+    pass
 
 main()
+
+
+
+
